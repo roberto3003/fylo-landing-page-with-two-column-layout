@@ -4,7 +4,7 @@
   --text-contrast: var(--white);
   --light: var(--white);
   --medium: lavender;
-  --dark: thistle;
+  --dark: lightsteelblue;
   --accent: slateblue;
   --black: rgba(46, 49, 49, 1);
   --white: white;
@@ -218,6 +218,21 @@ input {
   align-items: start;
 }
 
-.sign-up {
+.pre-footer {
   background-color: var(--medium);
+}
+
+.pre-footer section {
+  width: 80vw; 
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.sign-up {
+  align-items: flex-end;
+  padding-block-end: calc(var(--padding)*2);
+}
+
+.footer {
+  background-color: var(--dark);
 }
