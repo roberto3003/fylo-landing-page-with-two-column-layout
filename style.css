@@ -1,6 +1,7 @@
 :root {
   --bg-color: ghostwhite;
   --text: var(--black);
+  --text-contrast: var(--white);
   --light: var(--white);
   --medium: lavender;
   --dark: thistle;
@@ -10,7 +11,7 @@
   --padding: 1em;
   --gap: 4em;
   --font-size: clamp(1rem, 1.25vw, 2.5rem);
-  --shadow: 0 0.25vw 1vw  0 rgba(0,0,0,0.5);
+  --shadow: 0 0.25vw 1vw  0 rgba(0,0,0,0.2);
   --shadow-deep: 0 0.5vw 2vw  0 rgba(0,0,0,0.5);
 }
 
@@ -132,7 +133,6 @@ section, .section  {
   padding: calc(var(--padding)/2);
   text-align: center;
   max-width: 20em;
-  margin: 0 auto;
 }
 
 .button:hover {
@@ -141,7 +141,6 @@ section, .section  {
 }
 
 .cta {
-  color: var(--dark);
   background-color: var(--accent);
   border: 0.1em  solid var(--accent);
 }
@@ -151,7 +150,7 @@ section, .section  {
 }
 
 .cta a, .cta a:visited {
-  color: var(--dark);
+  color: var(--text-contrast);
 }
 
 
@@ -168,21 +167,57 @@ a:visited {
   box-shadow: var(--shadow);
 }
 
+/*
 .shadow:hover {
   box-shadow: var(--shadow-deep);
 }
+*/
 
-.small-img {
+.img-small {
   height: 3em;
 }
 
-.small-img img {
+.img-small img {
   height: 100%;
   width: auto;
 }
+
+input {
+  width: 16em;
+}
+
+.testimonials article {
+  background-color: var(--medium);
+}
+
+.testimonial {
+  padding: 1em;
+}
+
+.testimonial-img {
+  height: 3em;
+  width: 3em;
+  margin-inline-end: 1em;
+}
+
+.testimonial img {
+  min-width: initial;
+  height: 100%;
+  width: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonial footer {
+  display:flex;
+  align-items: center;
+}
+
 
 .footer-grid {
   align-items: start;
 }
 
-
+.sign-up {
+  background-color: var(--medium);
+}
